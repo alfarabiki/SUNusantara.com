@@ -1,10 +1,11 @@
 <template>
     <header class="bg-black text-white shadow-md">
         <div class="container mx-auto flex justify-between items-center p-1">
-            <div class="flex items-center space-x-2">
-                <img src="../../assets/images/logo.png" alt="Logo PT Ekspor Rempah" class="h-20" />
-                <span class="text-lg font-bold logo-text">Sumberdaya Unggul Nusantara</span>
-            </div>
+            <a href="homepage" class="flex items-center space-x-2">
+            <img src="../../assets/images/logo.png" alt="Logo PT Ekspor Rempah" class="h-20" />
+            <span class="text-lg font-bold logo-text">Sumberdaya Unggul Nusantara</span>
+            </a>
+
 
             <div class="flex items-center">
                 <Navbar class="hidden md:flex" />

@@ -1,10 +1,11 @@
 <template>
     <footer class="bg-black text-white py-6">
         <div class="container mx-auto text-center">
+                <!-- <img src="../../assets/images/logo.png" alt="Logo PT Ekspor Rempah" class="h-20" /> -->
             <!-- Nama PT di tengah -->
             <p class="text-sm text-center mb-4 font-copyright">
                 &copy;2024  <span class="font-bold">PT Sumberdaya Unggul Nusantara.</span><br />
-                All rights reserved.
+                All Rights Reserved.
             </p>
             
             <!-- Ikon media sosial -->
@@ -53,7 +54,7 @@
     font-size: 15px;
 }
 .font-copyright {
-    font-family: "Libre", cursive;
+    font-family: "Poppins", cursive;
     color: #ffffff;
     font-size: 15px;
 }

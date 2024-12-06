@@ -13,14 +13,14 @@
                         <p class="text-lg text-gray-600">
                             {{ slide.desc }}
                         </p>
-                        <button
+                        <!-- <button
                             class="mt-6 px-4 py-2 bg-black text-white font-semibold rounded-full flex items-center justify-center hover:bg-primary transition-all duration-1500">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                 stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M13.5 4.5l7.5 7.5m0 0l-7.5 7.5m7.5-7.5H3" />
                             </svg>
-                        </button>
+                        </button> -->
                     </div>
                     <div class="w-full lg:w-2/3">
                         <img :src="slide.image" :alt="'Rempah Slide ' + (index + 1)"
@@ -40,7 +40,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 // Import gambar
-import Rempah1 from '~/assets/images/rempah1.jpg';
+import Rempah1 from '~/assets/images/Asian Food Ingridient.jpg';
 import Rempah2 from '~/assets/images/rempah2.jpg';
 import Rempah3 from '~/assets/images/rempah3.jpg';
 
