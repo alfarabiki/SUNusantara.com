@@ -21,7 +21,7 @@
           class="mt-5 px-6 py-2 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark transition-all duration-300">
           {{ product.comingSoon ? "Coming Soon" : "Get Quotation" }}
         </a>
-        <a :href="`/pdp/${product.url}`"
+        <a :href="`/${product.url}`"
           class="mt-5 px-6 py-2 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark transition-all duration-300">
           Detail Product
         </a>
