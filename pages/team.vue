@@ -19,8 +19,8 @@
 
 <script setup>
 import { onMounted } from 'vue';
-import member1 from '/images/member1.webp';
-import member2 from '/images/member2.webp';
+import member1 from '/images/Owner.jpg';
+import member2 from '/images/Owner 2.jpg';
 
 
 const teamMembers = [

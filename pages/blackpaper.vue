@@ -135,9 +135,9 @@
           </li>
           <li>
             <strong>Return and Refund Policy:</strong>
-            - Purchased items cannot be returned unless they arrive damaged or defective.
-            - Customers must report any damages within 24 hours of receiving the product.
-            - Refunds or replacements are subject to verification and may take up to 7 business days to process.
+            Purchased items cannot be returned unless they arrive damaged or defective.
+            Customers must report any damages within 24 hours of receiving the product.
+            Refunds or replacements are subject to verification and may take up to 7 business days to process.
           </li>
           <li>
             <strong>International Shipping:</strong>

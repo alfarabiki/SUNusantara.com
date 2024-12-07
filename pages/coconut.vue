@@ -137,21 +137,21 @@
           </li>
           <li>
             <strong>Shipping Policy:</strong>
-            - Products are shipped through reliable logistic partners to ensure timely delivery.
-            - Standard shipping takes 3-5 business days after the payment confirmation.
-            - Customers will receive a tracking number to monitor the shipment status.
+             Products are shipped through reliable logistic partners to ensure timely delivery.
+             Standard shipping takes 3-5 business days after the payment confirmation.
+             Customers will receive a tracking number to monitor the shipment status.
           </li>
           <li>
             <strong>Return and Refund Policy:</strong>
-            - Purchased items cannot be returned unless they arrive damaged or defective.
-            - Customers must report any damages within 24 hours of receiving the product.
-            - Refunds or replacements are subject to verification and may take up to 7 business days to process.
+             Purchased items cannot be returned unless they arrive damaged or defective.
+             Customers must report any damages within 24 hours of receiving the product.
+             Refunds or replacements are subject to verification and may take up to 7 business days to process.
           </li>
           <li>
             <strong>International Shipping:</strong>
-            - For international orders, additional customs duties or taxes may apply and are the responsibility
+             For international orders, additional customs duties or taxes may apply and are the responsibility
             of the buyer.
-            - Delivery times may vary based on the destination country's customs processing time.
+             Delivery times may vary based on the destination country's customs processing time.
           </li>
           <li>
             <strong>Customer Support:</strong>
