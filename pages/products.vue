@@ -44,7 +44,7 @@ const products = [
     url: "coconut",
     image: Product1,
     specifications: ["Moisture: Maximum 40%", "pH: 4.5 to 6", "High EC : 1", "Fiber Length : 20-30cm", "Packaging : Polyester Bag, Block & BOR"],
-    comingSoon: true,
+    comingSoon: false,
   },
   {
     name: "Black Paper",

@@ -6,9 +6,9 @@
         Driven by dedication and expertise, our team is here to provide exceptional solutions for our valued clients.
       </p>
 
-      <div class="mt-8 grid md:grid-cols-3 gap-8">
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
         <div v-for="(member, index) in teamMembers" :key="index" class="text-center">
-          <NuxtImg :src="member.image" :alt="member.name" class="rounded-full w-32 h-32 mx-auto mb-4" loading="lazy" />
+          <NuxtImg :src="member.image" :alt="member.name" class="rounded-full w-40 h-40 mx-auto mb-6" loading="lazy" />
           <h3 class="text-xl font-semibold text-team-name">{{ member.name }}</h3>
           <p class="text-gray-500">{{ member.position }}</p>
         </div>
@@ -21,7 +21,7 @@
 import { onMounted } from 'vue';
 import member1 from '/images/member1.webp';
 import member2 from '/images/member2.webp';
-import member3 from '/images/member3.webp';
+
 
 const teamMembers = [
   {
@@ -31,15 +31,10 @@ const teamMembers = [
   },
   {
     name: "Bella Shania",
-    position: "Chief Operating Officer",
+    position: "Marketing Manager",
     image: member2,
   },
-  {
-    name: "Cory S. Reynolds",
-    position: "Marketing Manager",
-    image: member3,
-  },
-];
+]
 
 onMounted(() => {
   const sections = document.querySelectorAll('.section');
