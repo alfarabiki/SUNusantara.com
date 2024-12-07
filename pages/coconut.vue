@@ -169,10 +169,10 @@
 
 <script setup>
 import { ref } from 'vue';
-import PDPProduct from '~/assets/images/product/coconut.jpg';
-import PDPLocation from '~/assets/images/pdp/coconutPlantation.jpg';
-import PDPProcess from '~/assets/images/pdp/manClimbingTree.jpg';
-import PDPPackaging from '~/assets/images/pdp/packaging.jpg';
+import PDPProduct from '~/assets/images/product/coconut.webp';
+import PDPLocation from '~/assets/images/pdp/coconutPlantation.webp';
+import PDPProcess from '~/assets/images/pdp/manClimbingTree.webp';
+import PDPPackaging from '~/assets/images/pdp/packaging.webp';
 
 const productDetails = ref({
   name: 'CocoFiber & Cocopeat',
@@ -191,8 +191,8 @@ const productDetails = ref({
 });
 
 // Slideshow logic
-import delivery1 from "~/assets/images/rempah1.jpg";
-import delivery2 from "~/assets/images/rempah2.jpg";
+import delivery1 from "~/assets/images/rempah1.webp";
+import delivery2 from "~/assets/images/rempah2.webp";
 
 const images = [PDPProcess, delivery1, delivery2];
 const currentImageIndex = ref(0);

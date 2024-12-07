@@ -1,10 +1,10 @@
 <template>
   <nav class="hidden md:flex space-x-6 items-center">
     <NuxtLink to="/" class="nav-link">Home</NuxtLink>
-    <NuxtLink to="#about" class="nav-link">About Us</NuxtLink>
-    <NuxtLink to="#products" class="nav-link">Products</NuxtLink>
-    <NuxtLink to="#team" class="nav-link">Team</NuxtLink>
-    <NuxtLink to="#contact" class="nav-link">Contact</NuxtLink>
+    <NuxtLink to="/#about" class="nav-link">About Us</NuxtLink>
+    <NuxtLink to="/#products" class="nav-link">Products</NuxtLink>
+    <NuxtLink to="/#team" class="nav-link">Team</NuxtLink>
+    <NuxtLink to="/#contact" class="nav-link">Contact</NuxtLink>
     <NuxtLink to="https://www.linkedin.com" target="_blank" class="nav-link flex items-center space-x-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
         viewBox="0 0 16 16">

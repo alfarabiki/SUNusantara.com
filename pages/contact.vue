@@ -101,9 +101,9 @@ const submitForm = async () => {
 };
 
 // Slideshow logic
-import delivery1 from "~/assets/images/rempah1.jpg";
-import delivery2 from "~/assets/images/rempah2.jpg";
-import delivery3 from "~/assets/images/delivery.jpg";
+import delivery1 from "~/assets/images/rempah1.webp";
+import delivery2 from "~/assets/images/rempah2.webp";
+import delivery3 from "~/assets/images/delivery.webp";
 
 const images = [delivery1, delivery2, delivery3];
 const currentImageIndex = ref(0);

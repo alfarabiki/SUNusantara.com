@@ -40,9 +40,9 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 // Import gambar
-import Rempah1 from '~/assets/images/Asian Food Ingridient.jpg';
-import Rempah2 from '~/assets/images/rempah2.jpg';
-import Rempah3 from '~/assets/images/rempah3.jpg';
+import Rempah1 from '~/assets/images/Asian Food Ingridient.webp';
+import Rempah2 from '~/assets/images/rempah2.webp';
+import Rempah3 from '~/assets/images/rempah3.webp';
 
 export default {
     components: {

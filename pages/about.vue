@@ -21,7 +21,7 @@
             </div>
 
             <div>
-                <img src="../assets/images/team.jpg" alt="Team" class="w-full h-auto rounded-lg shadow-md" />
+                <img src="../assets/images/team.webp" alt="Team" class="w-full h-auto rounded-lg shadow-md" />
             </div>
         </div>
     </section>

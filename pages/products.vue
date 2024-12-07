@@ -32,9 +32,9 @@
 
 <script setup>
 import { onMounted } from 'vue';
-import Product1 from '~/assets/images/product/coconut.jpg';
-import Product2 from '~/assets/images/product/blackpaper.jpg';
-import Product3 from '~/assets/images/product/clove.jpg';
+import Product1 from '~/assets/images/product/coconut.webp';
+import Product2 from '~/assets/images/product/blackpaper.webp';
+import Product3 from '~/assets/images/product/clove.webp';
 
 const products = [
   {
