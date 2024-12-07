@@ -166,7 +166,7 @@ import { ref } from 'vue';
 import PDPProduct from '/images/pdp/close-up-turmeric-powder-with-root-grunge-wooden-background_160084-2.jpg';
 import PDPLocation from '/images/pdp/Turmeric-Location.jpg';
 import PDPProcess from '/images/pdp/Harvest-Turmeric.jpg';
-import PDPPackaging from '/images/pdp/Packaging-Blackpaper.jpg';
+import PDPPackaging from '/images/pdp/Packaging-Blackpaper.webp';
 
 const productDetails = ref({
   name: 'Turmeric',
