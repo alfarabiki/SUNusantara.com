@@ -161,10 +161,10 @@
 
 <script setup>
 import { ref } from 'vue';
-import PDPProduct from '~/assets/images/product/blackpaper.jpg';
-import PDPLocation from '~/assets/images/pdp/Blackpaper-Location.jpg';
-import PDPProcess from '~/assets/images/pdp/Blackpaper-Hand.jpg';
-import PDPPackaging from '~/assets/images/pdp/Packaging-Blackpaper.jpg';
+import PDPProduct from '~/assets/images/product/blackpaper.webp';
+import PDPLocation from '~/assets/images/pdp/Blackpaper-Location.webp';
+import PDPProcess from '~/assets/images/pdp/Blackpaper-Hand.webp';
+import PDPPackaging from '~/assets/images/pdp/Packaging-Blackpaper.webp';
 
 const productDetails = ref({
   name: 'Blackpaper',
@@ -177,8 +177,8 @@ const productDetails = ref({
 });
 
 // Slideshow logic
-import delivery1 from "~/assets/images/pdp/Black-Paper drying.jpg";
-import delivery2 from "~/assets/images/pdp/Farmer-Blackpaper.jpg";
+import delivery1 from "~/assets/images/pdp/Black-Paper drying.webp";
+import delivery2 from "~/assets/images/pdp/Farmer-Blackpaper.webp";
 
 const images = [PDPProcess, delivery1, delivery2];
 const currentImageIndex = ref(0);

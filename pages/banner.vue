@@ -49,7 +49,7 @@ export default {
 <style scoped>
 .parallax-banner {
     position: relative;
-    background: url('~/assets/images/banner1.jpg') center center/cover no-repeat;
+    background: url('~/assets/images/banner1.webp') center center/cover no-repeat;
     height: 300px;
     background-attachment: fixed;
 }
