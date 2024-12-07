@@ -14,8 +14,8 @@
         class="flex flex-col md:flex-row items-center bg-gradient-to-r from-primary to-secondary rounded-lg p-8 shadow-x5">
         <!-- Product Image -->
         <div class="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
-          <img :src="productDetails.productPhoto" alt="Product Image"
-            class="w-3/4 h-auto rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl" />
+          <NuxtImg :src="productDetails.productPhoto" alt="Product Image"
+            class="w-3/4 h-auto rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl" loading="lazy"/>
         </div>
 
         <!-- Product Specifications -->
@@ -50,7 +50,7 @@
       </div>
       <!-- Image -->
       <div class="w-full md:w-1/2">
-        <img :src="productDetails.locationImage" alt="Location Image" class="w-full h-auto rounded-lg shadow-md" />
+        <NuxtImg :src="productDetails.locationImage" alt="Location Image" class="w-full h-auto rounded-lg shadow-md" loading="lazy"/>
       </div>
     </div>
 
@@ -58,13 +58,13 @@
     <div id="processing" class="section flex flex-col md:flex-row items-center">
       <!-- Image -->
       <!-- <div class="w-full md:w-1/2 mb-8 md:mb-0">
-        <img :src="productDetails.processingImage" alt="Processing Image" class="w-full h-auto rounded-lg shadow-md" />
+        <NuxtImg :src="productDetails.processingImage" alt="Processing Image" class="w-full h-auto rounded-lg shadow-md" />
       </div> -->
       <div class="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center items-center">
         <div class="relative">
-          <img :src="images[currentImageIndex]" alt="Contact Us"
+          <NuxtImg :src="images[currentImageIndex]" alt="Contact Us"
             class="w-full h-full object-cover rounded-lg shadow-lg transition-opacity duration-500"
-            style="height: calc(100vh - 10rem);" />
+            style="height: calc(100vh - 10rem);" loading="lazy"/>
           <button @click="prevImage"
             class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75">
             ‹
@@ -106,7 +106,7 @@
       </div>
       <!-- Image -->
       <div class="w-full md:w-1/2">
-        <img :src="productDetails.packagingImage" alt="Packaging Image" class="w-full h-auto rounded-lg shadow-md" />
+        <NuxtImg :src="productDetails.packagingImage" alt="Packaging Image" class="w-full h-auto rounded-lg shadow-md" loading="lazy"/>
       </div>
     </div>
 
@@ -163,10 +163,10 @@
 
 <script setup>
 import { ref } from 'vue';
-import PDPProduct from '~/assets/images/pdp/close-up-turmeric-powder-with-root-grunge-wooden-background_160084-2.jpg';
-import PDPLocation from '~/assets/images/pdp/Turmeric-Location.jpg';
-import PDPProcess from '~/assets/images/pdp/Harvest-Turmeric.jpg';
-import PDPPackaging from '~/assets/images/pdp/Packaging-Blackpaper.jpg';
+import PDPProduct from '/images/pdp/close-up-turmeric-powder-with-root-grunge-wooden-background_160084-2.jpg';
+import PDPLocation from '/images/pdp/Turmeric-Location.jpg';
+import PDPProcess from '/images/pdp/Harvest-Turmeric.jpg';
+import PDPPackaging from '/images/pdp/Packaging-Blackpaper.jpg';
 
 const productDetails = ref({
   name: 'Turmeric',
@@ -183,8 +183,8 @@ const productDetails = ref({
 });
 
 // Slideshow logic
-import delivery1 from "~/assets/images/pdp/healthy-hand-holding-fresh-organic-root-vegetable-generated-by-ai_24640-80964.jpg";
-import delivery2 from "~/assets/images/pdp/close-up-turmeric-powder-with-root-grunge-wooden-background_160084-2.jpg";
+import delivery1 from "/images/pdp/healthy-hand-holding-fresh-organic-root-vegetable-generated-by-ai_24640-80964.jpg";
+import delivery2 from "/images/pdp/close-up-turmeric-powder-with-root-grunge-wooden-background_160084-2.jpg";
 
 const images = [PDPProcess, delivery1, delivery2];
 const currentImageIndex = ref(0);
@@ -211,11 +211,11 @@ const nextImage = () => {
   font-size: 40px;
 }
 
-img {
+NuxtImg {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img:hover {
+NuxtImg:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

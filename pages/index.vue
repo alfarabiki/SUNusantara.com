@@ -1,28 +1,31 @@
 <template>
     <Homepage />
-    <About />
-    <Banner />
-    <Products />
-    <Team />
-    <Contact />
-</template>
-
-<script>
-import Homepage from '~/pages/homepage.vue'
-import About from '~/pages/about.vue';
-import Banner from './banner.vue';
-import Products from './products.vue';
-import Team from './team.vue';
-import Contact from '~/pages/contact.vue';
-
-export default {
+    <client-only>
+      <LazyLoadComponent componentName="about" />
+    </client-only>
+    <client-only>
+      <LazyLoadComponent componentName="banner" />
+    </client-only>
+    <client-only>
+      <LazyLoadComponent componentName="products" />
+    </client-only>
+    <client-only>
+      <LazyLoadComponent componentName="team" />
+    </client-only>
+    <client-only>
+      <LazyLoadComponent componentName="contact" />
+    </client-only>
+  </template>
+  
+  <script>
+  import Homepage from '~/pages/homepage.vue';
+  import LazyLoadComponent from '~/pages/LazyLoadComponent.vue';
+  
+  export default {
     components: {
-        Homepage,
-        About,
-        Banner,
-        Products,
-        Team,
-        Contact,
+      Homepage,
+      LazyLoadComponent,
     },
-};
-</script>
+  };
+  </script>
+  

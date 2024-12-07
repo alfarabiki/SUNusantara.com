@@ -1,5 +1,5 @@
 <template>
-    <section id="about" class="py-16 px-8 section">
+    <section id="about" class="py-16 px-8 section fade-in-on-scroll">
         <div class="text-center mb-12">
             <h1 class="text-4xl font-bold text-primary">About Us</h1>
             <p class="text-lg text-gray-600 mt-4">We are a spice export company with a vision and mission to bring the natural wealth of Indonesia to the world.</p>
@@ -21,7 +21,7 @@
             </div>
 
             <div>
-                <img src="../assets/images/team.webp" alt="Team" class="w-full h-auto rounded-lg shadow-md" />
+                <NuxtImg  src="/images/team.webp" alt="Team" class="w-full h-auto rounded-lg shadow-md" loading="lazy"/>
             </div>
         </div>
     </section>
@@ -63,7 +63,7 @@ const addScrollAnimation = () => {
 }
 
 .text-primary {
-    font-family: "Open Sans", cursive;
+    font-family: "Libre", cursive;
     color: #b78d5b;
     font-size: 30px;
 }

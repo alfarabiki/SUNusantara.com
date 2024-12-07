@@ -1,5 +1,5 @@
 <template>
-  <section id="products" class="py-16 px-8 section fade-in-on-scroll">
+  <section id="products" class="py-16 px-8 section">
     <div class="text-center mb-12">
       <h1 class="text-4xl font-bold text-primary">Our Products</h1>
       <p class="text-lg text-gray-600 mt-4">
@@ -11,14 +11,17 @@
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       <div v-for="(product, index) in products" :key="index"
         class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4">
-        <img :src="product.image" :alt="product.name" class="w-50 h-50 object-cover rounded-lg mb-4"
-          :class="{ 'opacity-75': product.comingSoon }" />
+        <img :src="product.image" :alt="product.name" class="w-full h-auto object-cover rounded-lg mb-4"
+          :class="{ 'opacity-75': product.comingSoon }" loading="lazy" />
+
         <h2 class="text-lg font-bold text-gray-800 mb-2">{{ product.name }}</h2>
         <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
           <li v-for="(spec, specIndex) in product.specifications" :key="specIndex">{{ spec }}</li>
         </ul>
-        <a href="https://wa.me/6281294421232" target="_blank"
-          class="mt-5 px-6 py-2 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark transition-all duration-300">
+        <a :href="product.comingSoon ? '#' : 'https://wa.me/6281294421232'" target="_blank" :class="[
+          'mt-5 px-6 py-2 text-sm font-semibold rounded-lg transition-all duration-300',
+          product.comingSoon ? 'bg-gray-400 text-gray-600 cursor-not-allowed' : 'bg-primary text-white hover:bg-primary-dark'
+        ]" :style="product.comingSoon ? { pointerEvents: 'none' } : {}">
           {{ product.comingSoon ? "Coming Soon" : "Get Quotation" }}
         </a>
         <a :href="`/${product.url}`"
@@ -31,11 +34,9 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
-import Product1 from '~/assets/images/product/coconut.webp';
-import Product2 from '~/assets/images/product/blackpaper.webp';
-import Product3 from '~/assets/images/product/clove.webp';
-import Product3 from '~/assets/images/product/Tumeric Powder.jpg';
+import Product1 from '/images/product/coconut.webp';
+import Product2 from '/images/product/blackpaper.webp';
+import Product3 from '/images/product/TumericPowder.jpg';
 
 const products = [
   {
@@ -43,7 +44,7 @@ const products = [
     url: "coconut",
     image: Product1,
     specifications: ["Moisture: Maximum 40%", "pH: 4.5 to 6", "High EC : 1", "Fiber Length : 20-30cm", "Packaging : Polyester Bag, Block & BOR"],
-    comingSoon: false,
+    comingSoon: true,
   },
   {
     name: "Black Paper",
@@ -58,39 +59,15 @@ const products = [
     image: Product3,
     specifications: ["Purity",
       "Moisture : <12% Dried & <8% Powder",
-     "Size : Fresh 3-7cm ,Powder :80-120 mesh",
-      "Colour : Bright Yellow to Natural Orange", 
+      "Size : Fresh 3-7cm ,Powder :80-120 mesh",
+      "Colour : Bright Yellow to Natural Orange",
       "Packaging : Polyester, Food-Grade Plastic"],
     comingSoon: false,
   },
 ];
-onMounted(() => {
-  const sections = document.querySelectorAll('.section');
-  const observerOptions = {
-    threshold: 0.5, // Elemen harus terlihat setidaknya 50% di viewport
-  };
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in');
-        observer.unobserve(entry.target); // Stop observing setelah animasi dimulai
-      }
-    });
-  }, observerOptions);
-
-  sections.forEach(section => {
-    observer.observe(section);
-  });
-});
 </script>
 
 <style scoped>
-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .text-primary {
   font-family: "Libre", cursive;
   color: #b78d5b;
@@ -124,13 +101,10 @@ section {
 }
 
 .section {
-  opacity: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  opacity: 1;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.animate-in {
-  opacity: 1;
-  transform: translateY(0);
 }
 </style>

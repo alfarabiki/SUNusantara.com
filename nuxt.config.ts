@@ -8,7 +8,20 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/google-fonts'],
+  modules: ['@nuxtjs/google-fonts','@nuxt/image'],
+  image: {
+    alias: {
+      assets: '/assets',
+    },
+    formats: ['webp', 'jpg', 'png'],
+    presets: {
+      default: {
+        modifiers: {
+          loading: 'lazy',
+        },
+      },
+    },  
+  },
   googleFonts: {
     families: {
       'Macondo Swash Caps': [400],

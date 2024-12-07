@@ -1,5 +1,5 @@
 <template>
-    <section id="homepage" class="py-1 px-8 section fade-in-on-scroll">
+    <section id="homepage" class="py-1 px-8 section">
         <swiper :spaceBetween="30" :centeredSlides="true" :autoplay="{ delay: 5000, disableOnInteraction: false }"
             :modules="modules" :speed="2000" class="mySwiper">
             <swiper-slide v-for="(slide, index) in slides" :key="index"
@@ -23,8 +23,8 @@
                         </button> -->
                     </div>
                     <div class="w-full lg:w-2/3">
-                        <img :src="slide.image" :alt="'Rempah Slide ' + (index + 1)"
-                            class="rounded-lg w-full h-auto object-cover" />
+                        <NuxtImg :src="slide.image" :alt="'Rempah Slide ' + (index + 1)"
+                            class="rounded-lg w-full h-auto object-cover" loading="lazy"/>
                     </div>
                 </div>
             </swiper-slide>
@@ -40,9 +40,9 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 // Import gambar
-import Rempah1 from '~/assets/images/Asian Food Ingridient.webp';
-import Rempah2 from '~/assets/images/rempah2.webp';
-import Rempah3 from '~/assets/images/rempah3.webp';
+import Rempah1 from '/images/AsianFoodIngridient.webp';
+import Rempah2 from '/images/rempah2.webp';
+import Rempah3 from '/images/rempah3.webp';
 
 export default {
     components: {

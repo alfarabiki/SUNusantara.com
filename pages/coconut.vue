@@ -14,8 +14,8 @@
         class="flex flex-col md:flex-row items-center bg-gradient-to-r from-primary to-secondary rounded-lg p-6 shadow-xl">
         <!-- Product Image -->
         <div class="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
-          <img :src="productDetails.productPhoto" alt="Product Image"
-            class="w-3/4 h-auto rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl" />
+          <NuxtImg :src="productDetails.productPhoto" alt="Product Image"
+            class="w-3/4 h-auto rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl" loading="lazy"/>
         </div>
 
         <!-- Product Specifications -->
@@ -50,7 +50,7 @@
       </div>
       <!-- Image -->
       <div class="w-full md:w-1/2">
-        <img :src="productDetails.locationImage" alt="Location Image" class="w-full h-auto rounded-lg shadow-md" />
+        <NuxtImg :src="productDetails.locationImage" alt="Location Image" class="w-full h-auto rounded-lg shadow-md" loading="lazy"/>
       </div>
     </div>
 
@@ -58,13 +58,13 @@
     <div id="processing" class="section flex flex-col md:flex-row items-center">
       <!-- Image -->
       <!-- <div class="w-full md:w-1/2 mb-8 md:mb-0">
-        <img :src="productDetails.processingImage" alt="Processing Image" class="w-full h-auto rounded-lg shadow-md" />
+        <NuxtImg :src="productDetails.processingImage" alt="Processing Image" class="w-full h-auto rounded-lg shadow-md" />
       </div> -->
       <div class="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center items-center">
         <div class="relative">
-          <img :src="images[currentImageIndex]" alt="Contact Us"
+          <NuxtImg :src="images[currentImageIndex]" alt="Contact Us"
             class="w-full h-full object-cover rounded-lg shadow-lg transition-opacity duration-500"
-            style="height: calc(100vh - 10rem);" />
+            style="height: calc(100vh - 10rem);" loading="lazy"/>
           <button @click="prevImage"
             class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75">
             ‹
@@ -110,7 +110,7 @@
       </div>
       <!-- Image -->
       <div class="w-full md:w-1/2">
-        <img :src="productDetails.packagingImage" alt="Packaging Image" class="w-full h-auto rounded-lg shadow-md" />
+        <NuxtImg :src="productDetails.packagingImage" alt="Packaging Image" class="w-full h-auto rounded-lg shadow-md" loading="lazy"/>
       </div>
     </div>
 
@@ -169,10 +169,10 @@
 
 <script setup>
 import { ref } from 'vue';
-import PDPProduct from '~/assets/images/product/coconut.webp';
-import PDPLocation from '~/assets/images/pdp/coconutPlantation.webp';
-import PDPProcess from '~/assets/images/pdp/manClimbingTree.webp';
-import PDPPackaging from '~/assets/images/pdp/packaging.webp';
+import PDPProduct from '/images/product/coconut.webp';
+import PDPLocation from '/images/pdp/coconutPlantation.webp';
+import PDPProcess from '/images/pdp/manClimbingTree.webp';
+import PDPPackaging from '/images/pdp/packaging.webp';
 
 const productDetails = ref({
   name: 'CocoFiber & Cocopeat',
@@ -191,8 +191,8 @@ const productDetails = ref({
 });
 
 // Slideshow logic
-import delivery1 from "~/assets/images/rempah1.webp";
-import delivery2 from "~/assets/images/rempah2.webp";
+import delivery1 from "/images/rempah1.webp";
+import delivery2 from "/images/rempah2.webp";
 
 const images = [PDPProcess, delivery1, delivery2];
 const currentImageIndex = ref(0);

@@ -3,9 +3,9 @@
         <!-- Image Section -->
         <div class="w-full md:w-1/2 flex justify-center items-center">
             <div class="relative">
-                <img :src="images[currentImageIndex]" alt="Contact Us"
-                    class="w-full h-full object-cover rounded-lg shadow-lg transition-opacity duration-500"
-                    style="height: calc(100vh - 10rem);" />
+                <NuxtImg :src="images[currentImageIndex]" alt="Contact Us"
+                    class="w-full h-full object-cover rounded-lg shadow-lg transition-opacity duration-500 mb-2 md:mb-0"
+                    style="height: calc(100vh - 10rem);" loading="lazy"/>
                 <button @click="prevImage"
                     class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75">
                     ‹
@@ -101,9 +101,9 @@ const submitForm = async () => {
 };
 
 // Slideshow logic
-import delivery1 from "~/assets/images/rempah1.webp";
-import delivery2 from "~/assets/images/rempah2.webp";
-import delivery3 from "~/assets/images/delivery.webp";
+import delivery1 from "/images/rempah1.webp";
+import delivery2 from "/images/rempah2.webp";
+import delivery3 from "/images/delivery.webp";
 
 const images = [delivery1, delivery2, delivery3];
 const currentImageIndex = ref(0);
@@ -143,7 +143,7 @@ section {
 }
 
 .text-primary {
-    font-family: "Open Sans", cursive;
+    font-family: "Libre", cursive;
     color: #b78d5b;
     font-size: 30px;
 }
@@ -169,9 +169,7 @@ button {
 
 .loader {
     border: 2px solid #f3f3f3;
-    /* Warna luar */
     border-top: 2px solid #fff;
-    /* Warna bagian atas */
     border-radius: 50%;
     width: 16px;
     height: 16px;

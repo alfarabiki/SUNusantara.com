@@ -2,7 +2,7 @@
     <header class="bg-black text-white shadow-md">
         <div class="container mx-auto flex justify-between items-center p-1">
             <a href="/" class="flex items-center space-x-2">
-            <img src="../../assets/images/logo (1).webp" alt="Logo PT Ekspor Rempah" class="h-20" />
+            <NuxtImg src="/images/logo.webp" alt="Logo PT Ekspor Rempah" class="h-20" />
             <span class="text-lg font-bold logo-text">Sumberdaya Unggul Nusantara</span>
             </a>
 
