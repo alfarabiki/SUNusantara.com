@@ -20,7 +20,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="hover:text-primary">
+                    <a href="https://www.instagram.com/sdunusantara/" class="hover:text-primary">
                         <span class="sr-only">Instagram</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             class="bi bi-instagram" viewBox="0 0 16 16">
