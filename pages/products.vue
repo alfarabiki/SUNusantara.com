@@ -34,7 +34,7 @@
 import { onMounted } from 'vue';
 import Product1 from '~/assets/images/product/coconut.jpg';
 import Product2 from '~/assets/images/product/blackpaper.jpg';
-import Product3 from '~/assets/images/product/clove.jpg';
+import Product3 from '~/assets/images/product/Tumeric Powder.jpg';
 
 const products = [
   {
@@ -52,10 +52,14 @@ const products = [
     comingSoon: false,
   },
   {
-    name: "Clove",
-    url: "clove",
+    name: "Turmeric",
+    url: "Turmeric",
     image: Product3,
-    specifications: ["Purity", "Moisture : Maximum 9%", "Ash Containt : Less than 9%", "Packaging : Polyester Bag & BOR"],
+    specifications: ["Purity",
+      "Moisture : <12% Dried & <8% Powder",
+     "Size : Fresh 3-7cm ,Powder :80-120 mesh",
+      "Colour : Bright Yellow to Natural Orange", 
+      "Packaging : Polyester, Food-Grade Plastic"],
     comingSoon: false,
   },
 ];
