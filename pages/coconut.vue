@@ -191,8 +191,8 @@ const productDetails = ref({
 });
 
 // Slideshow logic
-import delivery1 from "/images/rempah1.webp";
-import delivery2 from "/images/rempah2.webp";
+import delivery1 from "/images/product/cropped-hand-man-pouring-coconut-water-container_1048944-14796562.webp";
+import delivery2 from "/images/product/old-man-peeled-coconut-shell-with-knife_79161-247.webp";
 
 const images = [PDPProcess, delivery1, delivery2];
 const currentImageIndex = ref(0);
