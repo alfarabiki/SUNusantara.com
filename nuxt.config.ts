@@ -1,11 +1,19 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Your First Business Partner in The Export of Premium Spices',
+      title: 'Your First Business Partner in The Export of Premium Spices',
       meta: [
         { 
           name: 'description', 
-          content: 'Your trusted partner in exporting premium spices. We deliver high-quality export services to meet the demands of the global market.' 
+          content: 'Sumber Daya Unggul Nusantara - Your trusted partner in exporting premium spices like Cocofiber, Cocopeat, Black Pepper, and Turmeric, adhering to international standards.' 
+        },
+        { 
+          name: 'keywords', 
+          content: 'Cocofiber, Cocopeat, Black Pepper, Turmeric, Premium Spices Export, Agriculture Commodities, International Trade, Indonesian Products, Sumber Daya Unggul Nusantara, SDU Nusantara' 
+        },
+        { 
+          name: 'author', 
+          content: 'Sumber Daya Unggul Nusantara' 
         },
         { 
           name: 'viewport', 
