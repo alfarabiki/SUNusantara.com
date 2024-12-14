@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         },
         { 
           name: 'keywords', 
-          content: 'Cocofiber, Cocopeat, Black Pepper, Turmeric, Premium Spices Export, Agriculture Commodities, International Trade, Indonesian Products, Sumber Daya Unggul Nusantara, SDU Nusantara' 
+          content: 'Cocofiber, Cocopeat, Black Pepper, Turmeric, Premium Spices Export, Agriculture Commodities, International Trade, Indonesian Products, Sumber Daya Unggul Nusantara, SDU Nusantara, PT.Sumber Daya Unggul Nusantara' 
         },
         { 
           name: 'author', 
